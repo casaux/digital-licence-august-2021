@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>myCASA</title>
+   <meta name="viewport" content="width=device-width">
+   <meta name="viewport" content="initial-scale=1">
+   <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
+   <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css">
+   <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+   <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
+   <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+
+
+      <script type="text/javascript">
+         /* page specific js */
+
+         $(document).ready(function() {
+
+            window.parent.window.location.hash
+
+
+
+         });
+      </script>
+      <style type="text/css">
+         /* page specific css */
+
+
+
+      </style>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+        <div class="header">
+            <div class="container">
+               <div class="row">
+
+
+
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+
+                  	<div id="dropdown-menu">
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="mycasa-signed-out.html">Sign out</a></p>
+						</div>
+
+
+                  </div>
+                  </div>
+
+
+
+
+
+               </div>
+            </div>
+         </div> <div class="body"><div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-xs-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+            <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="dashboard-bob.html">myCASA</a></li>
+                     <li>Confirm licence</li>
+                  </ul>
+               </nav>
+
+
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Confirm licence</h1>
+                  <a class="au-direction-link" href="javascript:history.back()">
+                  					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+                  					</a>
+              </header>
+
+              <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-6">
+
+<div class="au-form-group">
+                <div class="au-callout">
+                    <p>To confirm the details of a digital Flight Crew Licence or Remote Pilot Licence (RePL), you'll need to scan the QR code on the licence.</p>
+                    <p>You can learn more about licence confirmation and how to scan QR codes on the <a href="https://www.casa.gov.au/qr-code-verification" target="_blank">CASA website</a>.</p>
+                </div>
+					</div>
+
+                  <img id="qr" src="qr.svg" style="display:none;"/>
+
+
+					
+<div class="au-form-group">
+
+                      <a class="au-btn" onClick="myFunction()">Launch camera</a>
+					</div>
+					<div id="launch-camera" style="display: none">
+					<div class="au-form-group">
+                        <label for="camera" class="au-label">Camera</label>
+                        <!--<span class="au-hint-text">
+                        Please select your camera
+                        </span>-->
+                        <select id="camera" class="au-select au-select--block">
+                           <option value="1">Logitech C920 HD Pro</option>
+                           <option value="2">FaceTime HD Camera (Built-in)</option>
+                        </select>
+                     </div>
+					
+
+<div class="au-form-group">
+	
+	<a href="verified-details-interstitial.html"><img id"qr-2" src="verify-desktop.png"/></a>
+
+					</div>
+					</div>
+
+            </div>
+
+
+			 </div>
+		  </div>
+
+
+<div class="footer">
+		<div class="footer-wrapper">
+			<iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+		</div>
+	</div>
+
+
+</main>
+<script>
+		  function myFunction() {
+  var x = document.getElementById("launch-camera");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+		  </script>
+
+
+
+</body>
+</html>
